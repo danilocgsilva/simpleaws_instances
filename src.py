@@ -17,7 +17,7 @@ def get_all_regions(client):
     return regions
 
 
-def get_instances_from_region(region_name) -> list:
+def get_instances_from_region(region_name):
 
     ec2 = boto3.client('ec2', region_name = region_name)
 
